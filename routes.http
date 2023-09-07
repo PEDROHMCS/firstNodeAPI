@@ -1,0 +1,28 @@
+POST http://localhost:4444/videos
+Content-Type: application/json
+    
+{
+    "title": "Video node",
+    "description": "THE FIRST VIDEO",
+    "duration": "120"
+}
+
+
+###
+
+GET http://localhost:4444/videos
+
+###
+
+PUT http://localhost:4444/videos/34fc4d2e-4845-4f59-b7bd-ea5a18795967
+Content-Type: application/json
+
+{
+    "title": "Video 01 - Editado",
+    "description": "THE FIRST VIDEO",
+    "duration": "120"
+}
+
+###
+
+DELETE http://localhost:4444/videos/34fc4d2e-4845-4f59-b7bd-ea5a18795967
